@@ -36,6 +36,8 @@ const blogs = [
   },
 ]
 
+// const numbers = [12, 25, 35, 254]
+
 </script>
 
 <template>
@@ -44,6 +46,7 @@ const blogs = [
     
     <div class="flex flex-col space-y-5">
 
+      <!-- <Blog v-for="(blog, index) in blogs" :key="index" :hasanali="numbers"/> -->
       <Blog v-for="(blog, index) in blogs" :key="index" v-bind="blog"/>
 
       <!-- <div class="w-full">

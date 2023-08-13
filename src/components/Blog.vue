@@ -1,4 +1,5 @@
 <script setup>
+
 defineProps  ([
     'title',
     'image',
@@ -7,6 +8,12 @@ defineProps  ([
     'reviews',
     'slogan',
 ])
+
+// defineProps ({
+//   // hasanali: Array,
+//   hasanali: Object,
+// })
+
 </script>
 
 <template>
@@ -18,6 +25,7 @@ defineProps  ([
               <h1 class="text-2xl font-semibold text-gray-800 mt-4">{{ title }}</h1>
               <p class="text-xl text-gray-400 mt-2 leading-relaxed">{{ description }}</p>
             </div>
+            <p>{{ hasanali }}</p>
             <div class="bg-blue-50 p-5">
               <div class="sm:flex sm:justify-between">
                 <div>
